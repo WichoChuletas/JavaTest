@@ -5,7 +5,8 @@ import java.io.IOException;
 public class Question24 {
     public Question24(int port){
         if(Math.random()>0.5){
-            throw new IOException();
+            System.out.println("IOException");
+            //throw new IOException();
         }
         throw new RuntimeException();
     }
